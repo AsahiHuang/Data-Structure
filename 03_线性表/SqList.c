@@ -69,7 +69,7 @@ Status ListInsert(SqList * L , int i , ElemType e)
 Status ListDelete(SqList * L ,int i, ElemType * e)
 {
 	//线性表已满
-	if (L -> lenght == 0)
+	if (L -> length == 0)
 		return ERROR;
 	//i不再范围
 	if (i < 1 || i > L -> length)
