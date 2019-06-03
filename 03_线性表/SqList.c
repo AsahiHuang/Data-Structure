@@ -31,7 +31,7 @@ typedef struct
 #define ERROR 0
 #define TRUE 1
 #define FALSE 0
-typedef int STatus;
+
 /* Status 是函数的类型,其值是函数结构状态代码,如OK */
 /* 1 <= i <= ListLength(L) */
 
