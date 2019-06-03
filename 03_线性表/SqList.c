@@ -17,6 +17,8 @@
  */
 
 
+#include <stdio.h>
+typedef int Status;
 #define MAXSIZE 20 /* 存储空间初始分配 */
 typedef int ElemType; /* ElemType类型根据实际情况而定,假设为int */
 typedef struct 
@@ -38,7 +40,7 @@ typedef int STatus;
 
 Status GetElem(SqList L , int i , ElemType * e)
 {
-	if (L -> length == 0 || i < 1 || i > L.length)
+	if (L.length == 0 || i < 1 || i > L.length)
 		return ERROR;
 	*e = L.data[i - 1];
 	return OK;
@@ -80,7 +82,7 @@ Status ListDelete(SqList * L ,int i, ElemType * e)
 			L -> data[j - 1] = L -> data[j];
 	*e = L -> data[i - 1];
 	L -> length--;
-	return OK:
+	return OK;
 }
 
 
