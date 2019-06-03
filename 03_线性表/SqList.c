@@ -59,7 +59,7 @@ Status ListInsert(SqList * L , int i , ElemType e)
 	//i不在表尾
 	if (i < L -> length)
 	{
-		for (int j = L -> length - 1; k >= i - 1; k--)
+		for (int j = L -> length - 1; j >= i - 1; j--)
 			L -> data[j + 1] = L -> data[j]; 
 	}
 	L -> data[i - 1] = e;
